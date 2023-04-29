@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public float maxBulk = 50.0f;
+    public float maxWeight = 75.0f;
     public float speed = 3.0f;
     public float bulk = 0.0f;
     public float weight = 0.0f;
@@ -37,8 +39,26 @@ public class PlayerMovement : MonoBehaviour
     {
         if(col.gameObject.tag == "Package")
         {
-            booty.Add(new float[] {col.gameObject.GetComponent<PackageScript>().bulk, col.gameObject.GetComponent<PackageScript>().weight, col.gameObject.GetComponent<PackageScript>().worth});
-            Destroy(col.gameObject);
+            PackageScript ps = col.gameObject.GetComponent<PackageScript>();
+            if(bulk + ps.bulk <= maxBulk && weight + ps.weight <= maxWeight)
+            {
+                booty.Add(new float[] {ps.bulk, ps.weight, ps.worth});
+                Destroy(col.gameObject);
+            }
+        }
+
+        if(col.gameObject.tag == "Stash")
+        {
+            StashScript ss = col.gameObject.GetComponent<StashScript>();
+            List<float[]> removalList = new List<float[]>();
+            foreach(float[] pckg in booty)
+            {
+               if(ss.deposit(pckg))
+                  removalList.Add(pckg); 
+            }
+
+            removalList.ForEach(pckg => booty.Remove(pckg));
+
         }
     }
 }
