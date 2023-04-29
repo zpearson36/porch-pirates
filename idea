@@ -22,6 +22,7 @@ Game where your neighborhood is target of porch pirates
  todo list:
   - player character can move around
   - walk over "packages" to collect them
+  - must patrol neighborhood until packages are delivered while keeping suspicion low
   - a round lasts a finite amount of time (in game 9 - 5, its a full time job)
   - have people walking around whose vision you must avoid while taking package
   - end of day total determines the next days profile level
@@ -43,3 +44,4 @@ Game where your neighborhood is target of porch pirates
   - - can buy upgrades to increase limits
   - Maybes?
   - - have a charisma level that affects how suspicious people think you are
+  - must patrol neighborhood until packages are delivered while keeping suspicion low

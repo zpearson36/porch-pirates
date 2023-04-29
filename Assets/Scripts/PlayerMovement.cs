@@ -27,8 +27,8 @@ public class PlayerMovement : MonoBehaviour
         booty.ForEach(i => loot += (int) i[2]);
         float transX = Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime;
         float transY = Input.GetAxisRaw("Vertical") * speed * Time.deltaTime;
-        if(transX != 0) transY = 0.0f;
-        if(transY != 0) transX = 0.0f;
+        //if(transX != 0) transY = 0.0f;
+        //if(transY != 0) transX = 0.0f;
         Vector3 pos = transform.position;
         transform.position = new Vector3(pos.x + transX, pos.y + transY, pos.z);
     }
