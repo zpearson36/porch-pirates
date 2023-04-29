@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7691484416562658944}
   - component: {fileID: 2559241051818957352}
+  - component: {fileID: 9192544701271243092}
   m_Layer: 0
   m_Name: porch
   m_TagString: Porch
@@ -84,6 +85,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &9192544701271243092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134359400152518916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6c11182ecd0f945a2643e2971471c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5193559176818953181
 GameObject:
   m_ObjectHideFlags: 0
