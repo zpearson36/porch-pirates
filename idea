@@ -1,0 +1,45 @@
+Theme: Delivery
+
+Game where you play a porch pirate.
+ - steal packages and fence them
+ - the more you steal the higher the profile becomes
+ - higher the profile the increased likelihood you will be caught
+ - use money to buy items that help counteract consequences of higher profile
+ - try to get high score?
+
+Game where your neighborhood is target of porch pirates
+ - You are a vigilante neighbor who vows to stop all porch piracy
+ - You start by only being able to watch your own porch, specifically by looking out the door
+ - Also busy working, cannot let food burn so cannot spend entire time at door
+ - you use money from work to order surveilance equipment to help monitor
+ - equipment gets increasingly powerful allowing to monitor larger areas of neighborhoood
+ - goal is to get porch piracy to zero
+ - countdown to christsmas
+
+
+ Going with IDEA 1
+
+ todo list:
+  - player character can move around
+  - walk over "packages" to collect them
+  - a round lasts a finite amount of time (in game 9 - 5, its a full time job)
+  - have people walking around whose vision you must avoid while taking package
+  - end of day total determines the next days profile level
+  - effects of higher profile
+  - - More alert neighbors
+  - - appearance of security cameras
+  - - increased police patrols
+  - ways to counteract higher profile
+  - - new clothes
+  - - a disguise
+  - - plastic surgery?
+  - - dog toy to distract dogs
+  - - single use camera disruptors?
+  - - Buy off police (those corrupt fuckers)
+  - player has a bulk/weight limit
+  - - once limit is reached, player must drop off packages to getaway car.
+  - - bulkier makes you more suspicious
+  - - heavier weight makes you move slower
+  - - can buy upgrades to increase limits
+  - Maybes?
+  - - have a charisma level that affects how suspicious people think you are
