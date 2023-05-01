@@ -11,7 +11,7 @@ public class PackageScript : MonoBehaviour
     void Start()
     {
         bulk = Random.Range(.1f, 5f);
-        weight = Random.Range(.5f, 20f);
+        weight = Random.Range(.5f, 20);
         worth = Random.Range(5, 200);
     }
 

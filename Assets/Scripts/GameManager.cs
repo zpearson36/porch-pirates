@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject pckgPrefab;
     public float timeToSpawn = 0.0f;
+    public float spawnTime = 5.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,7 @@ public class GameManager : MonoBehaviour
     void Update()
     { 
         timeToSpawn += Time.deltaTime;
-        if(timeToSpawn > 5)
+        if(timeToSpawn > spawnTime)
         {
            GameObject[] porchArray = GameObject.FindGameObjectsWithTag("Porch");
            spawnPackage(porchArray[Random.Range(0, porchArray.Length)]);
